@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "coarsedirtslab",
+	"version": "${version}",
+	"name": "Coarse Dirt Slabs",
+	"description": "Adds Coarse Dirt Slabs!",
+	"authors": [
+		"cosmonster"
+	],
+	"contact": {
+		"homepage": "https://x.com/cosmonster1",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/coarsedirtslab/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"csm.coarsedirtslab.CoarseDirtSlabs"
+		],
+		"fabric-datagen": [
+			"csm.coarsedirtslab.CoarseDirtSlabsDataGenerator"
+		],
+		"client": [
+			"csm.coarsedirtslab.CoarseDirtSlabsClient"
+		]
+	},
+	"mixins": [
+		"coarsedirtslab.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
